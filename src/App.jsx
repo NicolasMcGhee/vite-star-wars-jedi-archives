@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import Title from "./Components/aTitle/Index";
-import SearchBar from "./Components/aSearchBar/Index";
 import Kenobi from "/Kenobi.png";
-import InfoWrapper from "./Components/bInfoWrapper/Index";
-import InfoCard from "./Components/bInfoCard/Index";
+import Title from "./Components/Title";
+import SearchBar from "./Components/SearchBar";
+import InfoWrapper from "./Components/InfoWrapper";
+import InfoCard from "./Components/InfoCard";
 function App() {
   return (
     <>
