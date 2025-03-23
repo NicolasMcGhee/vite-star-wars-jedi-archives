@@ -1,0 +1,11 @@
+.Infowrapper-Container {
+    margin-bottom: 2rem;
+}
+
+.Infowrapper-CardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+    place-items: center;
+    gap: 1rem; 
+}

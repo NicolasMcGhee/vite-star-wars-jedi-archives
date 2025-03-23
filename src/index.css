@@ -1,0 +1,13 @@
+/* For Global Styling: Varibles and the like */
+/* For Styling Home page, use Index.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
