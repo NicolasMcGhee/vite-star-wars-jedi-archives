@@ -1,0 +1,12 @@
+.Title-Container {
+    width: 1800px;
+    /* border: 1px solid red; */
+    margin-inline: auto;
+    padding: 1rem ;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+.Title-Title {
+    text-align: center;
+}
