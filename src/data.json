@@ -1,0 +1,27 @@
+[
+    {
+        "id": "1",
+        "name": "Yoda",
+        "rank": "Grandmaster/Council Master",
+        "pic": "/Jedi/Yoda.png"
+
+    },
+    {
+        "id": "2",
+        "name": "Mace Windu",
+        "rank": "Jedi Master/Council Master",
+        "pic": "/Jedi/Windu.png"
+    },
+    {
+        "id": "3",
+        "name": "Obi-wan Kenobi",
+        "rank": "Jedi Master/Council Master",
+        "pic": "/Jedi/Kenobi.png"
+    },
+    {
+        "id": "4",
+        "name": "Anakin Skywalker",
+        "rank": "Jedi Knight/Council Master",
+        "pic": "/Jedi/Anakin.png"
+    }
+]
