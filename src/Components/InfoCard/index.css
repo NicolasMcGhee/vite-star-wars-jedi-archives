@@ -1,34 +1,32 @@
 .InfoCard-Container {
     font-family: "Roboto", sans-serif;
     font-style: normal;
-    max-width: 80%;
+    padding: .5rem 1rem;
+    line-height: 1.8;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+    
+    border-radius: .8rem;
+  }
+
+  .Infocard-Heading {
+    /* background-color: azure; */
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid black;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    box-shadow: 0 8px 16px 0 rgb(99, 99, 99);
   }
-  
-  .InfoCard-Container:hover {
-    box-shadow: 0 8px 16px 0 black;
-    transition: 0.5s;
-    cursor: pointer;
+
+  .Infocard-Body {
+    justify-content: space-between;
   }
-  
-  .InfoCard-Name {
-    text-align: center;
+
+  .infoCard-Paragraph {
+    margin-top: 1rem;
   }
-  
-  .InfoCard-Description {
-    text-align: justify;
-    line-height: 1.2;
+
+
+  .blue {
+    border-color: #287ce3;
   }
-  
-  .InfoCard-Image {
-    border-radius: 1rem;
+
+  .green {
+    border-color: green;
   }
-  

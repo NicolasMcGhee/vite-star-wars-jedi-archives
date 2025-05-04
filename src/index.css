@@ -1,5 +1,6 @@
 /* For Global Styling: Varibles and the like */
 /* For Styling Home page, use Index.css */
+@import "tailwindcss";
 
 * {
   box-sizing: border-box;

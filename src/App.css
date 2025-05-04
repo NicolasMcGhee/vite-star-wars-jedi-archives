@@ -1,9 +1,11 @@
 /* Home Page Styling */
 
-.Home-Container {
-  width: 2000px;
+.Wrapper-Container {
+  max-width: 2000px;
   margin-inline: auto;
-  margin-top: 2rem;
-  border: 1px solid black;
+}
+
+.navigation {
   padding: 1rem;
+  color: black;
 }
