@@ -4,10 +4,11 @@ import Title from "./Components/Title";
 import InfoWrapper from "./Components/InfoWrapper";
 import InfoCard from "./Components/InfoCard";
 import data from "./data.json";
-import { Route, Routes } from "react-router";
+import { Link, Route, Routes } from "react-router";
 import Anakin from "/Jedi/Anakin.png";
 import Mace from "/Jedi/Windu.png";
 import Yoda from "/Jedi/Yoda.png";
+import InfoPage from "./Components/InfoPage";
 function App() {
   //Set State Functions
   const [filteredData, setFilteredData] = useState(data);
@@ -46,7 +47,9 @@ function App() {
       <div>
         <nav className=" border-b-2 flex justify-center navigation gap-10">
           <div>
-            <h1>Jedi Archives</h1>
+            <Link to={`/`}>
+              <h1>Jedi Archives</h1>
+            </Link>
           </div>
           <div className="flex justify-between gap-4 text-blue-400">
             <Title />
@@ -54,22 +57,6 @@ function App() {
             <Title />
           </div>
         </nav>
-
-        <div className="Wrapper-Container">
-          <InfoWrapper title="Jedi" subtitle="Servants of the Light Side">
-            {data.map((data) => (
-              <InfoCard
-                type={data.type}
-                pic={data.pic}
-                altDescription="Mace Windu"
-                name={data.name}
-                ranking={data.rank}
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sapiente aliquam, consequuntur iusto officiis inventore placeat, ea eaque dolorum quas soluta deleniti voluptas, culpa expedita?"
-              />
-            ))}
-          </InfoWrapper>
-        </div>
-
         {/* Use ternary to check if search is empty: If yes, use first. If no, use second */}
         {/* {data.map(filterQueries(data.name, query).map((data)) (
          <InfoCard
@@ -81,12 +68,34 @@ function App() {
        />
         ))} */}
 
-        {/* <Routes>
-           <Route
-          path="/jedi/:id"
-          element={<InfoTest />}
-        /> 
-        </Routes> */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <div className="Wrapper-Container">
+                  <InfoWrapper
+                    title="Jedi"
+                    subtitle="Servants of the Light Side"
+                  >
+                    {data.map((data) => (
+                      <InfoCard
+                        id={data.id}
+                        type={data.type}
+                        pic={data.pic}
+                        altDescription="Mace Windu"
+                        name={data.name}
+                        ranking={data.rank}
+                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga sapiente aliquam, consequuntur iusto officiis inventore placeat, ea eaque dolorum quas soluta deleniti voluptas, culpa expedita?"
+                      />
+                    ))}
+                  </InfoWrapper>
+                </div>
+              </>
+            }
+          />
+          <Route path="/jedi/:postId" element={<InfoPage />} />
+        </Routes>
       </div>
     </>
   );

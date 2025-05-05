@@ -7,6 +7,7 @@ import {
 } from "@material-tailwind/react";
 
 import "./index.css";
+import { Link } from "react-router";
 
 export default function InfoCard(props) {
   return (
@@ -25,7 +26,8 @@ export default function InfoCard(props) {
       <CardBody className="flex flex-col Infocard-Body">
         <section className="Infocard-Heading">
           <Typography variant="h6" color="gray" className="mb-4 uppercase">
-            {props.name}
+            <Link to={`/jedi/${props.id}`}>{props.name}</Link>
+            
           </Typography>
           <Typography variant="h4" color="blue-gray" className="mb-2">
             {props.ranking}
