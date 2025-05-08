@@ -6,21 +6,25 @@ export default function InfoPage() {
   const { postId } = useParams();
   const [country, setCountry] = useState(data);
 
-  function filterData() {
+   async function filterData() {
     const country = data.filter((item) => item.id.includes(postId));
     setCountry(country);
   }
 
   useEffect(() => {
     filterData(postId);
-    console.log(country);
-    console.log(postId)
   }, []);
+
+  //
 
   return (
     <div>
       {country.map((item) => (
-        <h1>{item.name}</h1>
+        <div>
+          <h1>{item.name}</h1>        
+          <img src={item.pictures.various.background} alt="" />
+        </div>
+        
       ))}
     </div>
   );

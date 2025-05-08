@@ -1,31 +1,50 @@
 [
-    {
-        "id": "1",
-        "name": "Yoda",
-        "rank": "Grandmaster/Council Master",
-        "pic": "/Jedi/Yoda.png",
-        "type": "force"
-
-    },
-    {
-        "id": "2",
-        "name": "Mace Windu",
-        "rank": "Jedi Master/Council Master",
-        "pic": "/Jedi/Windu.png",
-        "type": "force"
-    },
-    {
-        "id": "3",
-        "name": "Obi-wan Kenobi",
-        "rank": "Jedi Master/Council Master",
-        "pic": "/Jedi/Kenobi.png",
-        "type": "warrior"
-    },
-    {
-        "id": "4",
-        "name": "Anakin Skywalker",
-        "rank": "Jedi Knight/Council Master",
-        "pic": "/Jedi/Anakin.png",
-        "type": "warrior"
+  {
+    "id": "1",
+    "name": "yoda",
+    "rank": "Grandmaster/Council Master",
+    "pic": "/Jedi/Yoda.png",
+    "pictures": {
+      "various": {
+        "background": "/Jedi/Yoda/Yoda_Background.png"
+      },
+      "type": "force"
     }
+  },
+  {
+    "id": "2",
+    "name": "Mace Windu",
+    "rank": "Jedi Master/Council Master",
+    "pic": "/Jedi/Windu.png",
+    "pictures": {
+      "various": {
+        "background": "/Jedi/Yoda/Yoda_Background.png"
+      },
+      "type": "force"
+    }
+  },
+  {
+    "id": "3",
+    "name": "Obi-wan Kenobi",
+    "rank": "Jedi Master/Council Master",
+    "pic": "/Jedi/Kenobi.png",
+    "pictures": {
+      "various": {
+        "background": "/Jedi/Yoda/Yoda_Background.png"
+      },
+      "type": "warrior"
+    }
+  },
+  {
+    "id": "4",
+    "name": "Anakin Skywalker",
+    "rank": "Jedi Knight/Council Master",
+    "pic": "/Jedi/Anakin.png",
+    "pictures": {
+      "various": {
+        "background": "/Jedi/Yoda/Yoda_Background.png"
+      },
+      "type": "warrior"
+    }
+  }
 ]

@@ -95,6 +95,10 @@ function App() {
             }
           />
           <Route path="/jedi/:postId" element={<InfoPage />} />
+          {data.map((data) => (
+              <Route path={`/jedi/${data.name}`} element={<InfoPage banner={data.pic} bannerAlt="Alt Of Yoda"/>}/>
+          ))}
+          
         </Routes>
       </div>
     </>
